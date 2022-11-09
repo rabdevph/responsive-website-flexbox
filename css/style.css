@@ -20,6 +20,15 @@ ul {
   list-style: none;
 }
 
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a1c3ff;
+}
+
 h1,
 h2 {
   margin-bottom: 15px;
@@ -80,14 +89,8 @@ input[type="email"] {
 }
 
 .navbar a {
-  color: #fff;
-  text-decoration: none;
   font-size: 18px;
   font-weight: bold;
-}
-
-.navbar a:hover {
-  color: #a1c3ff;
 }
 
 .navbar .container {
@@ -233,12 +236,18 @@ textarea {
 /* Footer */
 .footer {
   color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background: #3474e6;
-  height: 50px;
+  min-height: 50px;
   padding: 20px;
+}
+
+.footer a {
+  font-weight: bold;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* 768px */
@@ -255,6 +264,7 @@ textarea {
   }
 
   .newsletter h3 {
+    margin: 0;
     margin-bottom: 10px;
   }
 
@@ -314,6 +324,11 @@ textarea {
     color: #fff;
     padding: 30px 20px 30px 20px;
     width: 100%;
+  }
+
+  .footer .container {
+    display: block;
+    text-align: center;
   }
 }
 
